@@ -1,0 +1,1132 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:ms="http://mapserver.gis.umn.edu/mapserver"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://mapserver.gis.umn.edu/mapserver https://maps.effis.emergency.copernicus.eu/gwis?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=ms:all.hs.today.points&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2026-11-15T21:32:46" numberMatched="62" numberReturned="62">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+      		<gml:lowerCorner>36.132030 -6.676350</gml:lowerCorner>
+      		<gml:upperCorner>43.548523 3.750460</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830719">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>39.568640 2.689230</gml:lowerCorner>
+        		<gml:upperCorner>39.568640 2.689230</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830719.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>39.568640 2.689230</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830719</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830814">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>40.576030 0.540290</gml:lowerCorner>
+        		<gml:upperCorner>40.576030 0.540290</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830814.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>40.576030 0.540290</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830814</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830880">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.406980 1.998140</gml:lowerCorner>
+        		<gml:upperCorner>41.406980 1.998140</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830880.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.406980 1.998140</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830880</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830742">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>39.649260 2.678960</gml:lowerCorner>
+        		<gml:upperCorner>39.649260 2.678960</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830742.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>39.649260 2.678960</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830742</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830773">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>39.663690 -0.250040</gml:lowerCorner>
+        		<gml:upperCorner>39.663690 -0.250040</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830773.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>39.663690 -0.250040</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830773</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830845">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.312020 1.661890</gml:lowerCorner>
+        		<gml:upperCorner>41.312020 1.661890</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830845.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.312020 1.661890</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830845</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192830909">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.454160 1.980160</gml:lowerCorner>
+        		<gml:upperCorner>41.454160 1.980160</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192830909.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.454160 1.980160</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192830909</ms:id>
+        <ms:acq_at>2026-11-15 01:53:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833852">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.142230 1.197490</gml:lowerCorner>
+        		<gml:upperCorner>36.142230 1.197490</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833852.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.142230 1.197490</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833852</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833900">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.475690 2.749000</gml:lowerCorner>
+        		<gml:upperCorner>36.475690 2.749000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833900.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.475690 2.749000</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833900</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833803">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.132030 1.239010</gml:lowerCorner>
+        		<gml:upperCorner>36.132030 1.239010</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833803.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.132030 1.239010</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833803</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833830">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.140340 2.927660</gml:lowerCorner>
+        		<gml:upperCorner>36.140340 2.927660</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833830.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.140340 2.927660</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833830</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833882">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.179790 3.747460</gml:lowerCorner>
+        		<gml:upperCorner>36.179790 3.747460</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833882.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.179790 3.747460</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833882</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833929">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.598720 3.136170</gml:lowerCorner>
+        		<gml:upperCorner>36.598720 3.136170</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833929.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.598720 3.136170</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833929</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833973">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.631000 3.232550</gml:lowerCorner>
+        		<gml:upperCorner>36.631000 3.232550</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833973.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.631000 3.232550</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833973</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833948">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.599090 2.876730</gml:lowerCorner>
+        		<gml:upperCorner>36.599090 2.876730</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833948.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.599090 2.876730</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833948</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192833994">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.682530 3.122960</gml:lowerCorner>
+        		<gml:upperCorner>36.682530 3.122960</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192833994.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.682530 3.122960</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192833994</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192834056">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.750120 3.079870</gml:lowerCorner>
+        		<gml:upperCorner>36.750120 3.079870</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192834056.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.750120 3.079870</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192834056</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192834076">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.750290 3.082770</gml:lowerCorner>
+        		<gml:upperCorner>36.750290 3.082770</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192834076.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.750290 3.082770</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192834076</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192834198">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>37.568060 -0.918450</gml:lowerCorner>
+        		<gml:upperCorner>37.568060 -0.918450</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192834198.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>37.568060 -0.918450</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192834198</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192834230">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>38.377030 -0.543400</gml:lowerCorner>
+        		<gml:upperCorner>38.377030 -0.543400</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192834230.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>38.377030 -0.543400</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192834230</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69192834147">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>37.359260 -6.676350</gml:lowerCorner>
+        		<gml:upperCorner>37.359260 -6.676350</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69192834147.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>37.359260 -6.676350</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69192834147</ms:id>
+        <ms:acq_at>2026-11-15 01:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69229499076">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.651460 3.668490</gml:lowerCorner>
+        		<gml:upperCorner>36.651460 3.668490</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69229499076.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.651460 3.668490</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69229499076</ms:id>
+        <ms:acq_at>2026-11-15 13:16:00</ms:acq_at>
+        <ms:CLASS>12HOURS_1</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074049">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.174900 3.749690</gml:lowerCorner>
+        		<gml:upperCorner>36.174900 3.749690</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074049.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.174900 3.749690</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074049</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074085">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.181010 3.749780</gml:lowerCorner>
+        		<gml:upperCorner>36.181010 3.749780</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074085.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.181010 3.749780</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074085</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074153">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.474870 2.751840</gml:lowerCorner>
+        		<gml:upperCorner>36.474870 2.751840</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074153.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.474870 2.751840</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074153</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074185">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.475700 2.754470</gml:lowerCorner>
+        		<gml:upperCorner>36.475700 2.754470</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074185.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.475700 2.754470</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074185</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074217">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.627240 3.230210</gml:lowerCorner>
+        		<gml:upperCorner>36.627240 3.230210</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074217.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.627240 3.230210</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074217</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074244">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.679500 3.123170</gml:lowerCorner>
+        		<gml:upperCorner>36.679500 3.123170</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074244.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.679500 3.123170</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074244</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074281">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.713520 -4.330050</gml:lowerCorner>
+        		<gml:upperCorner>36.713520 -4.330050</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074281.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.713520 -4.330050</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074281</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074333">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.749080 3.085080</gml:lowerCorner>
+        		<gml:upperCorner>36.749080 3.085080</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074333.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.749080 3.085080</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074333</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074392">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>38.375610 -0.545420</gml:lowerCorner>
+        		<gml:upperCorner>38.375610 -0.545420</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074392.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>38.375610 -0.545420</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074392</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074424">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>39.950900 -0.003690</gml:lowerCorner>
+        		<gml:upperCorner>39.950900 -0.003690</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074424.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>39.950900 -0.003690</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074424</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074487">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.310800 1.661350</gml:lowerCorner>
+        		<gml:upperCorner>41.310800 1.661350</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074487.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.310800 1.661350</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074487</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074533">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.406300 1.998690</gml:lowerCorner>
+        		<gml:upperCorner>41.406300 1.998690</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074533.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.406300 1.998690</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074533</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074575">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.409920 -3.839130</gml:lowerCorner>
+        		<gml:upperCorner>43.409920 -3.839130</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074575.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.409920 -3.839130</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074575</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074647">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.442480 -3.846570</gml:lowerCorner>
+        		<gml:upperCorner>43.442480 -3.846570</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074647.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.442480 -3.846570</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074647</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074693">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.443630 -3.846120</gml:lowerCorner>
+        		<gml:upperCorner>43.443630 -3.846120</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074693.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.443630 -3.846120</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074693</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193074730">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.523180 -5.727380</gml:lowerCorner>
+        		<gml:upperCorner>43.523180 -5.727380</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193074730.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.523180 -5.727380</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193074730</ms:id>
+        <ms:acq_at>2026-11-15 02:38:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69193075543">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.179270 -5.423570</gml:lowerCorner>
+        		<gml:upperCorner>36.179270 -5.423570</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69193075543.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.179270 -5.423570</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69193075543</ms:id>
+        <ms:acq_at>2026-11-15 02:40:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69186045494">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.528603 -5.733574</gml:lowerCorner>
+        		<gml:upperCorner>43.528603 -5.733574</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69186045494.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.528603 -5.733574</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69186045494</ms:id>
+        <ms:acq_at>2026-11-14 21:46:00</ms:acq_at>
+        <ms:CLASS>1DAY_B</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69186045317">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.530189 -5.734256</gml:lowerCorner>
+        		<gml:upperCorner>43.530189 -5.734256</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69186045317.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.530189 -5.734256</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69186045317</ms:id>
+        <ms:acq_at>2026-11-14 21:46:00</ms:acq_at>
+        <ms:CLASS>1DAY_B</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69186045100">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>37.744457 -5.122874</gml:lowerCorner>
+        		<gml:upperCorner>37.744457 -5.122874</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69186045100.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>37.744457 -5.122874</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69186045100</ms:id>
+        <ms:acq_at>2026-11-14 21:45:00</ms:acq_at>
+        <ms:CLASS>1DAY_B</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69189694007">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>43.548523 -5.718959</gml:lowerCorner>
+        		<gml:upperCorner>43.548523 -5.718959</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69189694007.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>43.548523 -5.718959</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69189694007</ms:id>
+        <ms:acq_at>2026-11-14 22:25:00</ms:acq_at>
+        <ms:CLASS>1DAY_S</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191245821">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.452520 1.979020</gml:lowerCorner>
+        		<gml:upperCorner>41.452520 1.979020</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191245821.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.452520 1.979020</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191245821</ms:id>
+        <ms:acq_at>2026-11-15 00:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191245850">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>41.474520 -1.486800</gml:lowerCorner>
+        		<gml:upperCorner>41.474520 -1.486800</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191245850.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>41.474520 -1.486800</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191245850</ms:id>
+        <ms:acq_at>2026-11-15 00:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191245782">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>40.577380 0.542170</gml:lowerCorner>
+        		<gml:upperCorner>40.577380 0.542170</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191245782.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>40.577380 0.542170</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191245782</ms:id>
+        <ms:acq_at>2026-11-15 00:56:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247466">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.598400 3.137750</gml:lowerCorner>
+        		<gml:upperCorner>36.598400 3.137750</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247466.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.598400 3.137750</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247466</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247354">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.132400 1.241550</gml:lowerCorner>
+        		<gml:upperCorner>36.132400 1.241550</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247354.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.132400 1.241550</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247354</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247356">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.140610 1.196370</gml:lowerCorner>
+        		<gml:upperCorner>36.140610 1.196370</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247356.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.140610 1.196370</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247356</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247491">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.632280 3.229260</gml:lowerCorner>
+        		<gml:upperCorner>36.632280 3.229260</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247491.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.632280 3.229260</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247491</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247558">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.680610 3.120380</gml:lowerCorner>
+        		<gml:upperCorner>36.680610 3.120380</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247558.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.680610 3.120380</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247558</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247915">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>39.647260 2.681660</gml:lowerCorner>
+        		<gml:upperCorner>39.647260 2.681660</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247915.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>39.647260 2.681660</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247915</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247582">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.748920 3.082930</gml:lowerCorner>
+        		<gml:upperCorner>36.748920 3.082930</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247582.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.748920 3.082930</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247582</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247615">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.771320 3.622830</gml:lowerCorner>
+        		<gml:upperCorner>36.771320 3.622830</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247615.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.771320 3.622830</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247615</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247392">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.177920 3.750460</gml:lowerCorner>
+        		<gml:upperCorner>36.177920 3.750460</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247392.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.177920 3.750460</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247392</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247411">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.474620 2.751380</gml:lowerCorner>
+        		<gml:upperCorner>36.474620 2.751380</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247411.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.474620 2.751380</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247411</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247454">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.595710 2.875990</gml:lowerCorner>
+        		<gml:upperCorner>36.595710 2.875990</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247454.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.595710 2.875990</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247454</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247497">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.674530 2.994200</gml:lowerCorner>
+        		<gml:upperCorner>36.674530 2.994200</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247497.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.674530 2.994200</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247497</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247540">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.680210 3.123190</gml:lowerCorner>
+        		<gml:upperCorner>36.680210 3.123190</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247540.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.680210 3.123190</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247540</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69191247742">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>37.571370 -0.922640</gml:lowerCorner>
+        		<gml:upperCorner>37.571370 -0.922640</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69191247742.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>37.571370 -0.922640</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69191247742</ms:id>
+        <ms:acq_at>2026-11-15 00:58:00</ms:acq_at>
+        <ms:CLASS>1DAY_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69221880924">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.679740 3.120980</gml:lowerCorner>
+        		<gml:upperCorner>36.679740 3.120980</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69221880924.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.679740 3.120980</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69221880924</ms:id>
+        <ms:acq_at>2026-11-15 12:18:00</ms:acq_at>
+        <ms:CLASS>12HOURS_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+    <wfs:member>
+      <ms:all.hs.today.points gml:id="all.hs.today.points.69221880957">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+        		<gml:lowerCorner>36.682080 3.124180</gml:lowerCorner>
+        		<gml:upperCorner>36.682080 3.124180</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <ms:msGeometry>
+          <gml:Point gml:id="all.hs.today.points.69221880957.1" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>36.682080 3.124180</gml:pos>
+          </gml:Point>
+        </ms:msGeometry>
+        <ms:id>69221880957</ms:id>
+        <ms:acq_at>2026-11-15 12:18:00</ms:acq_at>
+        <ms:CLASS>12HOURS_2</ms:CLASS>
+      </ms:all.hs.today.points>
+    </wfs:member>
+</wfs:FeatureCollection>
+

@@ -1,0 +1,15 @@
+Gladys EFFIS integration
+Copyright 2026 William-De71
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The data comes from EFFIS, the European Forest Fire Information System of the
+Copernicus Emergency Management Service (European Commission, Joint Research
+Centre), https://forest-fire.emergency.copernicus.eu/, reused under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0). The
+integration only reads it and shows it (classes of the Fire Weather Index,
+distances and directions are computed by the integration).
+
+This community integration is not affiliated with, endorsed or sponsored by
+the European Commission, the Joint Research Centre or Copernicus. It is not an
+official alert service.

@@ -1,0 +1,1137 @@
+{
+  "manifest_version": 1,
+  "type": "device",
+  "name": "EFFIS",
+  "description": {
+    "en": "Wildfire danger forecast, fires seen by satellite and burnt areas near your home (Copernicus).",
+    "fr": "Danger de feux de forêt, feux vus par satellite et surfaces brûlées près de chez vous (Copernicus).",
+    "de": "Waldbrandgefahr, per Satellit erkannte Brände und Brandflächen in Ihrer Nähe (Copernicus).",
+    "es": "Peligro de incendio forestal, fuegos vistos por satélite y áreas quemadas cerca de casa."
+  },
+  "version": "0.1.0",
+  "docker_image": "ghcr.io/william-de71/gladys-effis:0.1.0",
+  "gladys_version": ">=5.3.0",
+  "categories": ["environment", "security"],
+  "keywords": [
+    "wildfire",
+    "forest fire",
+    "feux de forêt",
+    "incendie",
+    "Waldbrand",
+    "incendio forestal",
+    "Copernicus",
+    "fire weather index",
+    "FWI",
+    "hotspots"
+  ],
+  "cover_image": "https://raw.githubusercontent.com/William-De71/gladys-effis/main/cover.jpg",
+  "transports": ["cloud"],
+  "location": true,
+  "config_schema": [
+    {
+      "key": "intro",
+      "type": "section",
+      "label": {
+        "en": "EFFIS, Copernicus",
+        "fr": "EFFIS, Copernicus",
+        "de": "EFFIS, Copernicus",
+        "es": "EFFIS, Copernicus"
+      },
+      "description": {
+        "en": "The data comes from EFFIS, the European Forest Fire Information System of the Copernicus Emergency Management Service (European Commission), open data under CC BY 4.0: no account, no key. For each place: the Fire Weather Index forecast for 9 days, the fires seen by satellite in the last 24 hours and the burnt areas EFFIS mapped in the last 7 days. Fires seen by satellite include farm burns and industrial heat: a detection is not a confirmed wildfire. This is not an official alert service: follow the instructions of the authorities.",
+        "fr": "Les données viennent d’EFFIS, le système européen d’information sur les feux de forêt du service de gestion des urgences Copernicus (Commission européenne), en données ouvertes sous licence CC BY 4.0 : aucun compte, aucune clé. Pour chaque lieu : la prévision de l’indice forêt météo (FWI) sur 9 jours, les feux vus par satellite ces dernières 24 heures et les surfaces brûlées cartographiées par EFFIS ces 7 derniers jours. Les feux vus par satellite incluent des brûlages agricoles et des sources de chaleur industrielles : une détection n’est pas un incendie confirmé. Ce n’est pas un service d’alerte officiel : suivez les consignes des autorités.",
+        "de": "Die Daten stammen von EFFIS, dem Europäischen Waldbrandinformationssystem des Copernicus-Katastrophen- und Krisenmanagementdienstes (Europäische Kommission), offene Daten unter CC BY 4.0: kein Konto, kein Schlüssel. Für jeden Ort: die Vorhersage des Feuerwetterindex (FWI) für 9 Tage, die per Satellit erkannten Brände der letzten 24 Stunden und die von EFFIS kartierten Brandflächen der letzten 7 Tage. Per Satellit erkannte Brände umfassen auch landwirtschaftliche Feuer und Industriewärme: Eine Erkennung ist kein bestätigter Waldbrand. Dies ist kein offizieller Warndienst: Befolgen Sie die Anweisungen der Behörden.",
+        "es": "Los datos proceden de EFFIS, el Sistema Europeo de Información sobre Incendios Forestales del servicio de gestión de emergencias Copernicus (Comisión Europea), datos abiertos con licencia CC BY 4.0: sin cuenta, sin clave. Para cada lugar: la previsión del índice meteorológico de incendios (FWI) a 9 días, los fuegos vistos por satélite en las últimas 24 horas y las áreas quemadas cartografiadas por EFFIS en los últimos 7 días. Los fuegos vistos por satélite incluyen quemas agrícolas y calor industrial: una detección no es un incendio confirmado. No es un servicio oficial de alertas: siga las indicaciones de las autoridades."
+      },
+      "links": [
+        {
+          "url": "https://forest-fire.emergency.copernicus.eu/",
+          "label": {
+            "en": "EFFIS website",
+            "fr": "Site d’EFFIS",
+            "de": "EFFIS-Website",
+            "es": "Sitio de EFFIS"
+          }
+        },
+        {
+          "url": "https://github.com/William-De71/gladys-effis/blob/main/docs/fr.md",
+          "label": {
+            "en": "Documentation (French)",
+            "fr": "Documentation",
+            "de": "Dokumentation (Französisch)",
+            "es": "Documentación (francés)"
+          }
+        },
+        {
+          "url": "https://github.com/William-De71/gladys-effis/blob/main/docs/en.md",
+          "label": {
+            "en": "Documentation",
+            "fr": "Documentation (anglais)",
+            "de": "Dokumentation (Englisch)",
+            "es": "Documentación (inglés)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "places",
+      "type": "section",
+      "label": {
+        "en": "Places",
+        "fr": "Lieux",
+        "de": "Orte",
+        "es": "Lugares"
+      },
+      "description": {
+        "en": "Choose a house of Gladys, or type coordinates. Each place becomes a device in the Discover tab. Up to three places.",
+        "fr": "Choisissez une maison de Gladys, ou saisissez des coordonnées. Chaque lieu devient un appareil dans l’onglet Découverte. Jusqu’à trois lieux.",
+        "de": "Wählen Sie ein Gladys-Haus oder geben Sie Koordinaten ein. Jeder Ort wird ein Gerät im Reiter Entdecken. Bis zu drei Orte.",
+        "es": "Elija una casa de Gladys o escriba coordenadas. Cada lugar se convierte en un dispositivo en la pestaña Descubrir. Hasta tres lugares."
+      }
+    },
+    {
+      "key": "house_1",
+      "type": "select",
+      "source": "houses",
+      "label": {
+        "en": "House",
+        "fr": "Maison",
+        "de": "Haus",
+        "es": "Casa"
+      },
+      "description": {
+        "en": "Its location in Gladys (Settings > Houses) is used.",
+        "fr": "Sa position dans Gladys (Paramètres > Maisons) est utilisée.",
+        "de": "Seine Position in Gladys (Einstellungen > Häuser) wird verwendet.",
+        "es": "Se usa su ubicación en Gladys (Ajustes > Casas)."
+      },
+      "required": false
+    },
+    {
+      "key": "coords_1",
+      "type": "string",
+      "label": {
+        "en": "Or coordinates",
+        "fr": "Ou des coordonnées",
+        "de": "Oder Koordinaten",
+        "es": "O coordenadas"
+      },
+      "description": {
+        "en": "Latitude, longitude. Win over the house (a second home, a forest nearby).",
+        "fr": "Latitude, longitude. Prioritaires sur la maison (résidence secondaire, forêt proche).",
+        "de": "Breite, Länge. Haben Vorrang vor dem Haus (Zweitwohnsitz, Wald in der Nähe).",
+        "es": "Latitud, longitud. Tienen prioridad sobre la casa (segunda residencia, bosque cercano)."
+      },
+      "placeholder": {
+        "en": "43.2965, 5.3698",
+        "fr": "43.2965, 5.3698",
+        "de": "43.2965, 5.3698",
+        "es": "43.2965, 5.3698"
+      },
+      "required": false
+    },
+    {
+      "key": "place_2_section",
+      "type": "section",
+      "label": {
+        "en": "Place 2",
+        "fr": "Lieu 2",
+        "de": "Ort 2",
+        "es": "Lugar 2"
+      }
+    },
+    {
+      "key": "house_2",
+      "type": "select",
+      "source": "houses",
+      "label": {
+        "en": "House",
+        "fr": "Maison",
+        "de": "Haus",
+        "es": "Casa"
+      },
+      "description": {
+        "en": "Its location in Gladys (Settings > Houses) is used.",
+        "fr": "Sa position dans Gladys (Paramètres > Maisons) est utilisée.",
+        "de": "Seine Position in Gladys (Einstellungen > Häuser) wird verwendet.",
+        "es": "Se usa su ubicación en Gladys (Ajustes > Casas)."
+      },
+      "required": false
+    },
+    {
+      "key": "coords_2",
+      "type": "string",
+      "label": {
+        "en": "Or coordinates",
+        "fr": "Ou des coordonnées",
+        "de": "Oder Koordinaten",
+        "es": "O coordenadas"
+      },
+      "description": {
+        "en": "Latitude, longitude. Win over the house (a second home, a forest nearby).",
+        "fr": "Latitude, longitude. Prioritaires sur la maison (résidence secondaire, forêt proche).",
+        "de": "Breite, Länge. Haben Vorrang vor dem Haus (Zweitwohnsitz, Wald in der Nähe).",
+        "es": "Latitud, longitud. Tienen prioridad sobre la casa (segunda residencia, bosque cercano)."
+      },
+      "placeholder": {
+        "en": "43.2965, 5.3698",
+        "fr": "43.2965, 5.3698",
+        "de": "43.2965, 5.3698",
+        "es": "43.2965, 5.3698"
+      },
+      "required": false
+    },
+    {
+      "key": "place_3_section",
+      "type": "section",
+      "label": {
+        "en": "Place 3",
+        "fr": "Lieu 3",
+        "de": "Ort 3",
+        "es": "Lugar 3"
+      }
+    },
+    {
+      "key": "house_3",
+      "type": "select",
+      "source": "houses",
+      "label": {
+        "en": "House",
+        "fr": "Maison",
+        "de": "Haus",
+        "es": "Casa"
+      },
+      "description": {
+        "en": "Its location in Gladys (Settings > Houses) is used.",
+        "fr": "Sa position dans Gladys (Paramètres > Maisons) est utilisée.",
+        "de": "Seine Position in Gladys (Einstellungen > Häuser) wird verwendet.",
+        "es": "Se usa su ubicación en Gladys (Ajustes > Casas)."
+      },
+      "required": false
+    },
+    {
+      "key": "coords_3",
+      "type": "string",
+      "label": {
+        "en": "Or coordinates",
+        "fr": "Ou des coordonnées",
+        "de": "Oder Koordinaten",
+        "es": "O coordenadas"
+      },
+      "description": {
+        "en": "Latitude, longitude. Win over the house (a second home, a forest nearby).",
+        "fr": "Latitude, longitude. Prioritaires sur la maison (résidence secondaire, forêt proche).",
+        "de": "Breite, Länge. Haben Vorrang vor dem Haus (Zweitwohnsitz, Wald in der Nähe).",
+        "es": "Latitud, longitud. Tienen prioridad sobre la casa (segunda residencia, bosque cercano)."
+      },
+      "placeholder": {
+        "en": "43.2965, 5.3698",
+        "fr": "43.2965, 5.3698",
+        "de": "43.2965, 5.3698",
+        "es": "43.2965, 5.3698"
+      },
+      "required": false
+    },
+    {
+      "key": "options",
+      "type": "section",
+      "label": {
+        "en": "Options",
+        "fr": "Options",
+        "de": "Optionen",
+        "es": "Opciones"
+      }
+    },
+    {
+      "key": "radius",
+      "type": "select",
+      "default": "25",
+      "label": {
+        "en": "Radius around each place",
+        "fr": "Rayon autour de chaque lieu",
+        "de": "Umkreis um jeden Ort",
+        "es": "Radio alrededor de cada lugar"
+      },
+      "description": {
+        "en": "Fires and burnt areas are watched within this distance.",
+        "fr": "Les feux et surfaces brûlées sont surveillés dans cette distance.",
+        "de": "Brände und Brandflächen werden in dieser Entfernung überwacht.",
+        "es": "Los fuegos y áreas quemadas se vigilan dentro de esta distancia."
+      },
+      "options": [
+        {
+          "value": "10",
+          "label": {
+            "en": "10 km",
+            "fr": "10 km",
+            "de": "10 km",
+            "es": "10 km"
+          }
+        },
+        {
+          "value": "25",
+          "label": {
+            "en": "25 km",
+            "fr": "25 km",
+            "de": "25 km",
+            "es": "25 km"
+          }
+        },
+        {
+          "value": "50",
+          "label": {
+            "en": "50 km",
+            "fr": "50 km",
+            "de": "50 km",
+            "es": "50 km"
+          }
+        },
+        {
+          "value": "100",
+          "label": {
+            "en": "100 km",
+            "fr": "100 km",
+            "de": "100 km",
+            "es": "100 km"
+          }
+        }
+      ]
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "default": "auto",
+      "label": {
+        "en": "Language of the texts",
+        "fr": "Langue des textes",
+        "de": "Sprache der Texte",
+        "es": "Idioma de los textos"
+      },
+      "description": {
+        "en": "Feature names, scene texts and status. Automatic: the language of your dashboard once a widget has been shown.",
+        "fr": "Noms des fonctionnalités, textes des scènes et état. Automatique : la langue de votre tableau de bord dès qu’un widget a été affiché.",
+        "de": "Namen der Funktionen, Szenentexte und Status. Automatisch: die Sprache Ihres Dashboards, sobald ein Widget angezeigt wurde.",
+        "es": "Nombres de las funciones, textos de escenas y estado. Automático: el idioma de su panel en cuanto se haya mostrado un widget."
+      },
+      "options": [
+        {
+          "value": "auto",
+          "label": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          }
+        },
+        {
+          "value": "en",
+          "label": {
+            "en": "English",
+            "fr": "English",
+            "de": "English",
+            "es": "English"
+          }
+        },
+        {
+          "value": "fr",
+          "label": {
+            "en": "Français",
+            "fr": "Français",
+            "de": "Français",
+            "es": "Français"
+          }
+        },
+        {
+          "value": "de",
+          "label": {
+            "en": "Deutsch",
+            "fr": "Deutsch",
+            "de": "Deutsch",
+            "es": "Deutsch"
+          }
+        },
+        {
+          "value": "es",
+          "label": {
+            "en": "Español",
+            "fr": "Español",
+            "de": "Español",
+            "es": "Español"
+          }
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "key": "check_places",
+      "timeout_seconds": 90,
+      "label": {
+        "en": "Check the places",
+        "fr": "Vérifier les lieux",
+        "de": "Orte prüfen",
+        "es": "Comprobar los lugares"
+      },
+      "description": {
+        "en": "Shows the coordinates used, and reads EFFIS now.",
+        "fr": "Affiche les coordonnées utilisées, et lit EFFIS tout de suite.",
+        "de": "Zeigt die verwendeten Koordinaten und liest EFFIS sofort.",
+        "es": "Muestra las coordenadas usadas y lee EFFIS ahora."
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "key": "danger",
+      "icon": "thermometer",
+      "label": {
+        "en": "Wildfire danger",
+        "fr": "Danger feux de forêt",
+        "de": "Waldbrandgefahr",
+        "es": "Peligro de incendio"
+      },
+      "description": {
+        "en": "The fire danger level of today and of the next days.",
+        "fr": "Le niveau de danger d’incendie aujourd’hui et les jours suivants.",
+        "de": "Die Waldbrandgefahr heute und in den nächsten Tagen.",
+        "es": "El nivel de peligro de incendio hoy y los próximos días."
+      },
+      "settings": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Device",
+            "fr": "Appareil",
+            "de": "Gerät",
+            "es": "Dispositivo"
+          },
+          "description": {
+            "en": "Leave empty for the first place.",
+            "fr": "Laisser vide pour le premier lieu.",
+            "de": "Leer lassen für den ersten Ort.",
+            "es": "Dejar vacío para el primer lugar."
+          },
+          "required": false
+        },
+        {
+          "key": "days",
+          "type": "number",
+          "min": 3,
+          "max": 9,
+          "default": 7,
+          "label": {
+            "en": "Days",
+            "fr": "Jours",
+            "de": "Tage",
+            "es": "Días"
+          },
+          "description": {
+            "en": "3 to 9, today first.",
+            "fr": "3 à 9, aujourd’hui en premier.",
+            "de": "3 bis 9, heute zuerst.",
+            "es": "3 a 9, hoy primero."
+          }
+        }
+      ]
+    },
+    {
+      "key": "fires",
+      "icon": "map-pin",
+      "label": {
+        "en": "Fires nearby",
+        "fr": "Feux à proximité",
+        "de": "Brände in der Nähe",
+        "es": "Incendios cercanos"
+      },
+      "description": {
+        "en": "Fires seen by satellite in 24 h and burnt areas mapped in 7 days.",
+        "fr": "Feux vus par satellite en 24 h et surfaces brûlées cartographiées en 7 jours.",
+        "de": "Per Satellit erkannte Brände (24 h) und kartierte Brandflächen (7 Tage).",
+        "es": "Fuegos vistos por satélite en 24 h y áreas quemadas cartografiadas en 7 días."
+      },
+      "settings": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Device",
+            "fr": "Appareil",
+            "de": "Gerät",
+            "es": "Dispositivo"
+          },
+          "description": {
+            "en": "Leave empty for the first place.",
+            "fr": "Laisser vide pour le premier lieu.",
+            "de": "Leer lassen für den ersten Ort.",
+            "es": "Dejar vacío para el primer lugar."
+          },
+          "required": false
+        }
+      ]
+    }
+  ],
+  "scene_triggers": [
+    {
+      "key": "danger_level_changed",
+      "label": {
+        "en": "Fire danger level changed",
+        "fr": "Niveau de danger changé",
+        "de": "Gefahrenstufe geändert",
+        "es": "Nivel de peligro cambiado"
+      },
+      "description": {
+        "en": "When the fire danger level of today changes (new forecast or new day).",
+        "fr": "Quand le niveau de danger d’incendie du jour change (nouvelle prévision ou nouveau jour).",
+        "de": "Wenn sich die heutige Waldbrandgefahr ändert (neue Vorhersage oder neuer Tag).",
+        "es": "Cuando cambia el nivel de peligro de incendio de hoy (nueva previsión o nuevo día)."
+      },
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Device",
+            "fr": "Appareil",
+            "de": "Gerät",
+            "es": "Dispositivo"
+          },
+          "description": {
+            "en": "One of the EFFIS places. Leave empty for any place.",
+            "fr": "Un des lieux EFFIS. Laisser vide pour tous les lieux.",
+            "de": "Einer der EFFIS-Orte. Leer lassen für alle Orte.",
+            "es": "Uno de los lugares de EFFIS. Dejar vacío para cualquier lugar."
+          },
+          "required": false
+        },
+        {
+          "key": "level",
+          "type": "multi_select",
+          "label": {
+            "en": "New level",
+            "fr": "Nouveau niveau",
+            "de": "Neue Stufe",
+            "es": "Nuevo nivel"
+          },
+          "description": {
+            "en": "Empty: any level.",
+            "fr": "Vide : tous les niveaux.",
+            "de": "Leer: jede Stufe.",
+            "es": "Vacío: cualquier nivel."
+          },
+          "options": [
+            {
+              "value": "low",
+              "label": {
+                "en": "Low",
+                "fr": "Faible",
+                "de": "Gering",
+                "es": "Bajo"
+              }
+            },
+            {
+              "value": "moderate",
+              "label": {
+                "en": "Moderate",
+                "fr": "Modéré",
+                "de": "Mäßig",
+                "es": "Moderado"
+              }
+            },
+            {
+              "value": "high",
+              "label": {
+                "en": "High",
+                "fr": "Élevé",
+                "de": "Hoch",
+                "es": "Alto"
+              }
+            },
+            {
+              "value": "very_high",
+              "label": {
+                "en": "Very high",
+                "fr": "Très élevé",
+                "de": "Sehr hoch",
+                "es": "Muy alto"
+              }
+            },
+            {
+              "value": "extreme",
+              "label": {
+                "en": "Extreme",
+                "fr": "Extrême",
+                "de": "Extrem",
+                "es": "Extremo"
+              }
+            },
+            {
+              "value": "very_extreme",
+              "label": {
+                "en": "Very extreme",
+                "fr": "Très extrême",
+                "de": "Sehr extrem",
+                "es": "Muy extremo"
+              }
+            }
+          ]
+        },
+        {
+          "key": "change",
+          "type": "select",
+          "label": {
+            "en": "Change",
+            "fr": "Évolution",
+            "de": "Änderung",
+            "es": "Cambio"
+          },
+          "description": {
+            "en": "Empty: both.",
+            "fr": "Vide : les deux.",
+            "de": "Leer: beide.",
+            "es": "Vacío: ambos."
+          },
+          "options": [
+            {
+              "value": "up",
+              "label": {
+                "en": "Rises",
+                "fr": "Monte",
+                "de": "Steigt",
+                "es": "Sube"
+              }
+            },
+            {
+              "value": "down",
+              "label": {
+                "en": "Falls",
+                "fr": "Baisse",
+                "de": "Sinkt",
+                "es": "Baja"
+              }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "key": "device_name",
+          "type": "string",
+          "label": {
+            "en": "Device name",
+            "fr": "Nom de l’appareil",
+            "de": "Gerätename",
+            "es": "Nombre del dispositivo"
+          }
+        },
+        {
+          "key": "level",
+          "type": "string",
+          "label": {
+            "en": "Level (low … very_extreme)",
+            "fr": "Niveau (low … very_extreme)",
+            "de": "Stufe (low … very_extreme)",
+            "es": "Nivel (low … very_extreme)"
+          }
+        },
+        {
+          "key": "level_label",
+          "type": "string",
+          "label": {
+            "en": "Level, in words",
+            "fr": "Niveau, en toutes lettres",
+            "de": "Stufe, ausgeschrieben",
+            "es": "Nivel, en palabras"
+          }
+        },
+        {
+          "key": "previous_level",
+          "type": "string",
+          "label": {
+            "en": "Previous level",
+            "fr": "Niveau précédent",
+            "de": "Vorherige Stufe",
+            "es": "Nivel anterior"
+          }
+        },
+        {
+          "key": "previous_level_label",
+          "type": "string",
+          "label": {
+            "en": "Previous level, in words",
+            "fr": "Niveau précédent, en toutes lettres",
+            "de": "Vorherige Stufe, ausgeschrieben",
+            "es": "Nivel anterior, en palabras"
+          }
+        },
+        {
+          "key": "change",
+          "type": "string",
+          "label": {
+            "en": "Change (up, down)",
+            "fr": "Évolution (up, down)",
+            "de": "Änderung (up, down)",
+            "es": "Cambio (up, down)"
+          }
+        },
+        {
+          "key": "fwi",
+          "type": "number",
+          "label": {
+            "en": "Fire Weather Index",
+            "fr": "Indice forêt météo (FWI)",
+            "de": "Feuerwetterindex (FWI)",
+            "es": "Índice meteorológico de incendios"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary sentence",
+            "fr": "Phrase de résumé",
+            "de": "Zusammenfassung",
+            "es": "Frase de resumen"
+          }
+        }
+      ]
+    },
+    {
+      "key": "fire_detected",
+      "label": {
+        "en": "Fire detected nearby",
+        "fr": "Feu détecté à proximité",
+        "de": "Brand in der Nähe erkannt",
+        "es": "Incendio detectado cerca"
+      },
+      "description": {
+        "en": "When a satellite sees a new fire within the radius (may be a farm burn).",
+        "fr": "Quand un satellite voit un nouveau feu dans le rayon (peut être un brûlage agricole).",
+        "de": "Wenn ein Satellit einen neuen Brand im Umkreis erkennt (evtl. ein Agrarfeuer).",
+        "es": "Cuando un satélite ve un nuevo fuego en el radio (puede ser una quema agrícola)."
+      },
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Device",
+            "fr": "Appareil",
+            "de": "Gerät",
+            "es": "Dispositivo"
+          },
+          "description": {
+            "en": "One of the EFFIS places. Leave empty for any place.",
+            "fr": "Un des lieux EFFIS. Laisser vide pour tous les lieux.",
+            "de": "Einer der EFFIS-Orte. Leer lassen für alle Orte.",
+            "es": "Uno de los lugares de EFFIS. Dejar vacío para cualquier lugar."
+          },
+          "required": false
+        }
+      ],
+      "variables": [
+        {
+          "key": "device_name",
+          "type": "string",
+          "label": {
+            "en": "Device name",
+            "fr": "Nom de l’appareil",
+            "de": "Gerätename",
+            "es": "Nombre del dispositivo"
+          }
+        },
+        {
+          "key": "distance_km",
+          "type": "number",
+          "label": {
+            "en": "Distance (km)",
+            "fr": "Distance (km)",
+            "de": "Entfernung (km)",
+            "es": "Distancia (km)"
+          }
+        },
+        {
+          "key": "direction",
+          "type": "string",
+          "label": {
+            "en": "Direction (n, ne, e, se, s, sw, w, nw)",
+            "fr": "Direction (n, ne, e, se, s, sw, w, nw)",
+            "de": "Richtung (n, ne, e, se, s, sw, w, nw)",
+            "es": "Dirección (n, ne, e, se, s, sw, w, nw)"
+          }
+        },
+        {
+          "key": "direction_label",
+          "type": "string",
+          "label": {
+            "en": "Direction, in words",
+            "fr": "Direction, en toutes lettres",
+            "de": "Richtung, ausgeschrieben",
+            "es": "Dirección, en palabras"
+          }
+        },
+        {
+          "key": "detected_at",
+          "type": "string",
+          "label": {
+            "en": "Seen at (YYYY-MM-DD HH:MM)",
+            "fr": "Vu à (AAAA-MM-JJ HH:MM)",
+            "de": "Gesehen um (JJJJ-MM-TT HH:MM)",
+            "es": "Visto a las (AAAA-MM-DD HH:MM)"
+          }
+        },
+        {
+          "key": "hotspots",
+          "type": "number",
+          "label": {
+            "en": "Hot spots seen",
+            "fr": "Points chauds vus",
+            "de": "Erkannte Hotspots",
+            "es": "Puntos calientes vistos"
+          }
+        },
+        {
+          "key": "latitude",
+          "type": "number",
+          "label": {
+            "en": "Latitude",
+            "fr": "Latitude",
+            "de": "Breite",
+            "es": "Latitud"
+          }
+        },
+        {
+          "key": "longitude",
+          "type": "number",
+          "label": {
+            "en": "Longitude",
+            "fr": "Longitude",
+            "de": "Länge",
+            "es": "Longitud"
+          }
+        },
+        {
+          "key": "danger_level",
+          "type": "string",
+          "label": {
+            "en": "Danger level of today",
+            "fr": "Niveau de danger du jour",
+            "de": "Heutige Gefahrenstufe",
+            "es": "Nivel de peligro de hoy"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary sentence",
+            "fr": "Phrase de résumé",
+            "de": "Zusammenfassung",
+            "es": "Frase de resumen"
+          }
+        }
+      ]
+    },
+    {
+      "key": "burnt_area_mapped",
+      "label": {
+        "en": "Burnt area mapped nearby",
+        "fr": "Surface brûlée à proximité",
+        "de": "Brandfläche in der Nähe",
+        "es": "Área quemada cercana"
+      },
+      "description": {
+        "en": "When EFFIS maps a new burnt area within the radius.",
+        "fr": "Quand EFFIS cartographie une nouvelle surface brûlée dans le rayon.",
+        "de": "Wenn EFFIS eine neue Brandfläche im Umkreis kartiert.",
+        "es": "Cuando EFFIS cartografía una nueva área quemada en el radio."
+      },
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Device",
+            "fr": "Appareil",
+            "de": "Gerät",
+            "es": "Dispositivo"
+          },
+          "description": {
+            "en": "One of the EFFIS places. Leave empty for any place.",
+            "fr": "Un des lieux EFFIS. Laisser vide pour tous les lieux.",
+            "de": "Einer der EFFIS-Orte. Leer lassen für alle Orte.",
+            "es": "Uno de los lugares de EFFIS. Dejar vacío para cualquier lugar."
+          },
+          "required": false
+        }
+      ],
+      "variables": [
+        {
+          "key": "device_name",
+          "type": "string",
+          "label": {
+            "en": "Device name",
+            "fr": "Nom de l’appareil",
+            "de": "Gerätename",
+            "es": "Nombre del dispositivo"
+          }
+        },
+        {
+          "key": "area_ha",
+          "type": "number",
+          "label": {
+            "en": "Area (ha)",
+            "fr": "Surface (ha)",
+            "de": "Fläche (ha)",
+            "es": "Superficie (ha)"
+          }
+        },
+        {
+          "key": "commune",
+          "type": "string",
+          "label": {
+            "en": "Municipality",
+            "fr": "Commune",
+            "de": "Gemeinde",
+            "es": "Municipio"
+          }
+        },
+        {
+          "key": "province",
+          "type": "string",
+          "label": {
+            "en": "Province",
+            "fr": "Province",
+            "de": "Provinz",
+            "es": "Provincia"
+          }
+        },
+        {
+          "key": "country",
+          "type": "string",
+          "label": {
+            "en": "Country code",
+            "fr": "Code pays",
+            "de": "Ländercode",
+            "es": "Código de país"
+          }
+        },
+        {
+          "key": "fire_date",
+          "type": "string",
+          "label": {
+            "en": "Fire date (YYYY-MM-DD)",
+            "fr": "Date du feu (AAAA-MM-JJ)",
+            "de": "Branddatum (JJJJ-MM-TT)",
+            "es": "Fecha del incendio (AAAA-MM-DD)"
+          }
+        },
+        {
+          "key": "distance_km",
+          "type": "number",
+          "label": {
+            "en": "Distance (km)",
+            "fr": "Distance (km)",
+            "de": "Entfernung (km)",
+            "es": "Distancia (km)"
+          }
+        },
+        {
+          "key": "direction",
+          "type": "string",
+          "label": {
+            "en": "Direction (n, ne, e, se, s, sw, w, nw)",
+            "fr": "Direction (n, ne, e, se, s, sw, w, nw)",
+            "de": "Richtung (n, ne, e, se, s, sw, w, nw)",
+            "es": "Dirección (n, ne, e, se, s, sw, w, nw)"
+          }
+        },
+        {
+          "key": "direction_label",
+          "type": "string",
+          "label": {
+            "en": "Direction, in words",
+            "fr": "Direction, en toutes lettres",
+            "de": "Richtung, ausgeschrieben",
+            "es": "Dirección, en palabras"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary sentence",
+            "fr": "Phrase de résumé",
+            "de": "Zusammenfassung",
+            "es": "Frase de resumen"
+          }
+        }
+      ]
+    }
+  ],
+  "scene_actions": [
+    {
+      "key": "get_fire_danger",
+      "label": {
+        "en": "Get the fire danger",
+        "fr": "Obtenir le danger d’incendie",
+        "de": "Waldbrandgefahr abrufen",
+        "es": "Obtener el peligro de incendio"
+      },
+      "description": {
+        "en": "The fire danger of a place today, tomorrow or the day after, and the fires around it.",
+        "fr": "Le danger d’incendie d’un lieu aujourd’hui, demain ou après-demain, et les feux autour.",
+        "de": "Die Waldbrandgefahr eines Ortes heute, morgen oder übermorgen, und die Brände in der Nähe.",
+        "es": "El peligro de incendio de un lugar hoy, mañana o pasado mañana, y los fuegos cercanos."
+      },
+      "timeout_seconds": 60,
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Device",
+            "fr": "Appareil",
+            "de": "Gerät",
+            "es": "Dispositivo"
+          },
+          "description": {
+            "en": "Leave empty for the first place.",
+            "fr": "Laisser vide pour le premier lieu.",
+            "de": "Leer lassen für den ersten Ort.",
+            "es": "Dejar vacío para el primer lugar."
+          },
+          "required": false
+        },
+        {
+          "key": "day",
+          "type": "select",
+          "default": "today",
+          "label": {
+            "en": "Day",
+            "fr": "Jour",
+            "de": "Tag",
+            "es": "Día"
+          },
+          "options": [
+            {
+              "value": "today",
+              "label": {
+                "en": "Today",
+                "fr": "Aujourd’hui",
+                "de": "Heute",
+                "es": "Hoy"
+              }
+            },
+            {
+              "value": "tomorrow",
+              "label": {
+                "en": "Tomorrow",
+                "fr": "Demain",
+                "de": "Morgen",
+                "es": "Mañana"
+              }
+            },
+            {
+              "value": "day_after",
+              "label": {
+                "en": "Day after tomorrow",
+                "fr": "Après-demain",
+                "de": "Übermorgen",
+                "es": "Pasado mañana"
+              }
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "key": "device_name",
+          "type": "string",
+          "label": {
+            "en": "Device name",
+            "fr": "Nom de l’appareil",
+            "de": "Gerätename",
+            "es": "Nombre del dispositivo"
+          }
+        },
+        {
+          "key": "date",
+          "type": "string",
+          "label": {
+            "en": "Day (YYYY-MM-DD)",
+            "fr": "Jour (AAAA-MM-JJ)",
+            "de": "Tag (JJJJ-MM-TT)",
+            "es": "Día (AAAA-MM-DD)"
+          }
+        },
+        {
+          "key": "fwi",
+          "type": "number",
+          "label": {
+            "en": "Fire Weather Index (-1: unknown)",
+            "fr": "Indice FWI (-1 : inconnu)",
+            "de": "Feuerwetterindex (-1: unbekannt)",
+            "es": "Índice FWI (-1: desconocido)"
+          }
+        },
+        {
+          "key": "level",
+          "type": "string",
+          "label": {
+            "en": "Level (low … very_extreme)",
+            "fr": "Niveau (low … very_extreme)",
+            "de": "Stufe (low … very_extreme)",
+            "es": "Nivel (low … very_extreme)"
+          }
+        },
+        {
+          "key": "level_label",
+          "type": "string",
+          "label": {
+            "en": "Level, in words",
+            "fr": "Niveau, en toutes lettres",
+            "de": "Stufe, ausgeschrieben",
+            "es": "Nivel, en palabras"
+          }
+        },
+        {
+          "key": "fires_nearby",
+          "type": "number",
+          "label": {
+            "en": "Fires seen nearby in 24 h",
+            "fr": "Feux vus à proximité en 24 h",
+            "de": "Brände in der Nähe (24 h)",
+            "es": "Fuegos cercanos en 24 h"
+          }
+        },
+        {
+          "key": "nearest_fire_km",
+          "type": "number",
+          "label": {
+            "en": "Nearest fire (km, -1: none)",
+            "fr": "Feu le plus proche (km, -1 : aucun)",
+            "de": "Nächster Brand (km, -1: keiner)",
+            "es": "Fuego más cercano (km, -1: ninguno)"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary sentence",
+            "fr": "Phrase de résumé",
+            "de": "Zusammenfassung",
+            "es": "Frase de resumen"
+          }
+        }
+      ]
+    }
+  ]
+}
