@@ -5,7 +5,7 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). This file is generated at
 each release from the Conventional Commits: do not edit it by hand.
 
-## [0.1.0] - unreleased
+## [0.1.0] - 2026-11-15
 
 ### Added
 
@@ -15,3 +15,5 @@ each release from the Conventional Commits: do not edit it by hand.
 - Scene action "Get the fire danger" (today, tomorrow or the day after), with the fires nearby and a ready-made sentence.
 - Dashboard widgets "Wildfire danger" (the next 3 to 9 days) and "Fires nearby" (fires seen in 24 hours, burnt areas mapped in 7 days), crediting the source.
 - English, French, German and Spanish everywhere: settings, devices, widgets, scenes and documentation.
+
+[0.1.0]: https://github.com/William-De71/gladys-effis/releases/tag/v0.1.0
